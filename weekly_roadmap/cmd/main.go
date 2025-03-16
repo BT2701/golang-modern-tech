@@ -5,6 +5,7 @@ import (
 	"os"
 	"weekly_roadmap/week1"
 	"weekly_roadmap/week2"
+	"weekly_roadmap/week3"
 )
 
 func main() {
@@ -13,6 +14,7 @@ func main() {
 	fmt.Println("Please choose the options:")
 	fmt.Println("1. Sum of integers (week1)")
 	fmt.Println("2. Calculate area and perimeter of shapes (week2)")
+	fmt.Println("3. Go routines (week3)")
 
 	var choice int
 	_, err := fmt.Scan(&choice)
@@ -30,6 +32,8 @@ func main() {
 		}
 	case 2:
 		week2.HandleShape()
+	case 3:
+		week3.MainWeek3()
 	default:
 		fmt.Println("Lựa chọn không hợp lệ.")
 		os.Exit(1)
