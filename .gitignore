@@ -19,3 +19,6 @@ go.work
 # IDE specific files
 .vscode/
 .idea/
+
+weekly_roadmap/go.sum
+mini_project/go.sum
