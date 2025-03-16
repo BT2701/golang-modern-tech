@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"modern-tech/weekly_roadmap/week1"
+	"modern-tech/weekly_roadmap/week2"
+	"modern-tech/weekly_roadmap/week3"
 	"os"
-	"weekly_roadmap/week1"
-	"weekly_roadmap/week2"
-	"weekly_roadmap/week3"
 )
 
 func main() {
