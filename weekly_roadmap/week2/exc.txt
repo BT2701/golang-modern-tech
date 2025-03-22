@@ -1,0 +1,10 @@
+1️⃣ Viết một struct Rectangle có hai thuộc tính Width và Height, sau đó viết method:
+
+Area() trả về diện tích
+
+Perimeter() trả về chu vi
+2️⃣ Viết một interface Shape có method Area().
+
+Tạo struct Circle và Rectangle implement interface này.
+
+Viết hàm PrintArea(s Shape) để in diện tích của hình.

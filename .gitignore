@@ -21,4 +21,6 @@ go.work
 .idea/
 
 weekly_roadmap/go.sum
-mini_project/go.sum
+modern-tech/mini_project/go.sum
+
+go.sum

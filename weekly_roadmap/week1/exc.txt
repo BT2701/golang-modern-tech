@@ -1,0 +1,1 @@
+Viết chương trình nhập vào một danh sách số nguyên và tính tổng của chúng.
