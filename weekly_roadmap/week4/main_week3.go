@@ -1,10 +1,10 @@
-package week3
+package week4
 
 import (
 	"fmt"
 )
 
-func MainWeek3() {
+func MainWeek4() {
 	var choice int
 	fmt.Println("Select a function to execute:")
 	fmt.Println("1. Tạo 3 goroutines chạy đồng thời")

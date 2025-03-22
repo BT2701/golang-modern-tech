@@ -1,13 +1,7 @@
-1️⃣ Tạo 3 goroutines chạy đồng thời, mỗi goroutine in ra một dòng chữ khác nhau.
-2️⃣ Viết một chương trình tính tổng của một danh sách số bằng nhiều goroutines.
+Sử dụng net/http để xử lý request/response.
 
-Chia danh sách số thành nhiều phần.
+Hỗ trợ các API: lấy danh sách, xem chi tiết, thêm, cập nhật, xóa sinh viên.
 
-Mỗi goroutine tính tổng một phần.
+Trao đổi dữ liệu qua JSON, hỗ trợ các phương thức GET, POST, PUT, DELETE.
 
-Dùng channel để gom kết quả từ các goroutines.
-3️⃣ Viết chương trình mô phỏng ngân hàng với nhiều tài khoản.
-
-Có nhiều goroutines thực hiện nạp/rút tiền.
-
-Sử dụng sync.Mutex để tránh race condition.
+Áp dụng Middleware (log request, kiểm tra JWT) và Dependency Injection.

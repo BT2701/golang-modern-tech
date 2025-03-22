@@ -1,4 +1,4 @@
-package week3
+package week4
 
 import (
 	"fmt"
@@ -48,8 +48,8 @@ func HandleBankAccount() {
 
 	var wg sync.WaitGroup
 
-	simulate:= inputSimulateDeposit()
-	
+	simulate := inputSimulateDeposit()
+
 	// Simulate deposits
 	for i := 0; i < simulate; i++ {
 		wg.Add(1)

@@ -1,10 +1,10 @@
-package week3
+package week4
 
 import (
 	"fmt"
-	"sync"
 	"strconv"
 	"strings"
+	"sync"
 )
 
 func sumPart(numbers []int, wg *sync.WaitGroup, resultChan chan int) {
