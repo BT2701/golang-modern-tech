@@ -1,0 +1,19 @@
+✅ Tuần 5 – Bài tập: Xây dựng API quản lý sinh viên với Gin & GORM
+Yêu cầu:
+Viết REST API bằng Gin và GORM để quản lý sinh viên, gồm các chức năng:
+
+Kết nối MySQL bằng GORM.
+
+Tạo model Student: ID, Name, Email, Age, Class.
+
+Các API cần có:
+
+GET /students: Lấy danh sách sinh viên.
+
+GET /students/:id: Lấy chi tiết sinh viên.
+
+POST /students: Thêm sinh viên mới.
+
+PUT /students/:id: Cập nhật sinh viên.
+
+DELETE /students/:id: Xoá sinh viên.
