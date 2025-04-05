@@ -1,0 +1,15 @@
+Tạo server WebSocket bằng Go
+
+Endpoint ws://localhost:8080/ws cho phép client kết nối.
+
+Khi một client gửi tin nhắn, server broadcast cho tất cả client đang kết nối.
+
+Giao tiếp thời gian thực
+
+Tin nhắn gửi đi bao gồm: SenderID, ReceiverID, Message, Timestamp.
+
+Tin nhắn được gửi/nhận ngay lập tức mà không cần reload trang.
+
+Lưu tin nhắn vào MongoDB hoặc MySQL
+
+Khi có tin nhắn mới, server lưu tin nhắn vào DB.

@@ -1,0 +1,19 @@
+Tích hợp Redis cache
+
+Khi gọi GET /students, kết quả được lưu vào Redis.
+
+Các lần gọi sau sẽ đọc từ cache nếu có.
+
+Khi thêm/sửa/xóa sinh viên → xóa cache cũ để đảm bảo dữ liệu mới nhất.
+
+Đếm số lượt truy cập API
+
+Dùng Redis để đếm số lượt truy cập vào từng API (GET, POST, v.v.).
+
+Tạo thêm API GET /metrics để hiển thị thống kê số lượt gọi từng endpoint.
+
+Cấu hình để dễ dàng mở rộng
+
+Cấu trúc code cho phép dễ dàng scale thêm instance (dùng Redis làm shared cache).
+
+Mô phỏng nhiều client gọi API liên tục để kiểm tra hiệu suất.

@@ -1,0 +1,24 @@
+Đăng ký & Đăng nhập người dùng
+
+POST /auth/register: Đăng ký người dùng (lưu vào DB).
+
+POST /auth/login: Đăng nhập, trả về JWT token nếu thành công.
+
+Xác thực bằng JWT
+
+Tạo middleware kiểm tra token JWT ở header Authorization.
+
+Chỉ cho phép truy cập các API /students nếu token hợp lệ.
+
+Bảo vệ API quản lý sinh viên
+
+Thêm middleware xác thực vào các route:
+
+GET /students
+
+POST /students
+
+PUT /students/:id
+
+DELETE /students/:id
+
