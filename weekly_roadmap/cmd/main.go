@@ -7,6 +7,7 @@ import (
 	"modern-tech/weekly_roadmap/week3"
 	"modern-tech/weekly_roadmap/week4"
 	"modern-tech/weekly_roadmap/week5"
+	"modern-tech/weekly_roadmap/week6"
 	"os"
 )
 
@@ -19,6 +20,7 @@ func main() {
 	fmt.Println("3. Develop base api (week3)")
 	fmt.Println("4. Go routines (week4)")
 	fmt.Println("5. API with Gin & ORM với GORM (week5)")
+	fmt.Println("6. API with JWT (week6)")
 
 	var choice int
 	_, err := fmt.Scan(&choice)
@@ -42,6 +44,8 @@ func main() {
 		week4.MainWeek4()
 	case 5:
 		week5.RunServer()
+	case 6:
+		week6.RunServer()
 	default:
 		fmt.Println("Lựa chọn không hợp lệ.")
 		os.Exit(1)
