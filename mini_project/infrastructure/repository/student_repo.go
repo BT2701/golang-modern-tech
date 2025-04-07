@@ -25,3 +25,19 @@ func (r *StudentRepository) GetStudentByEmail(email string) (*models.Student, er
 	}
 	return &student, nil
 }
+
+func (r *StudentRepository) GetAll() ([]models.Student, error) {
+	var students []models.Student
+	if err := r.db.Find(&students).Error; err != nil {
+		return nil, err
+	}
+	return students, nil
+}
+
+func (r *StudentRepository) Update(student *models.Student) error {
+	return r.db.Save(student).Error
+}
+
+func (r *StudentRepository) Delete(id int) error {
+	return r.db.Delete(&models.Student{}, id).Error
+}

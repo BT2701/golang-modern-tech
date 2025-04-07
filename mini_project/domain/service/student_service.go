@@ -38,3 +38,19 @@ func (s *StudentService) Login(email, password string) (string, error) {
 
 	return jwt.GenerateToken(student.ID)
 }
+
+func (s *StudentService) GetAll() ([]models.Student, error) {
+	return s.repo.GetAll()
+}
+
+func (s *StudentService) Update(student *models.Student) (*models.Student, error) {
+	err := s.repo.Update(student)
+	if err != nil {
+		return nil, err
+	}
+	return student, nil
+}
+
+func (s *StudentService) Delete(id int) error {
+	return s.repo.Delete(id)
+}

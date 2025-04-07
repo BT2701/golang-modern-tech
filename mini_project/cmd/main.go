@@ -7,6 +7,7 @@ import (
 	"modern-tech/mini_project/domain/models"
 	"modern-tech/mini_project/domain/service"
 	"modern-tech/mini_project/infrastructure/database"
+
 	// "modern-tech/mini_project/infrastructure/redis"
 	"modern-tech/mini_project/infrastructure/repository"
 	"modern-tech/mini_project/pkg/jwt"
@@ -76,11 +77,9 @@ func main() {
 	protected := router.Group("/")
 	protected.Use(AuthMiddleware())
 	{
-		// protected.GET("/students", studentHandler.GetAll)
-		// protected.GET("/students/:id", studentHandler.GetByID)
-		// protected.POST("/students", studentHandler.Add)
-		// protected.PUT("/students/:id", studentHandler.Update)
-		// protected.DELETE("/students/:id", studentHandler.Delete)
+		protected.GET("/students", studentHandler.GetAll)
+		protected.PUT("/students/:id", studentHandler.Update)
+		protected.DELETE("/students/:id", studentHandler.Delete)
 
 		protected.POST("/messages", messageHandler.SendMessage)
 		protected.GET("/messages/:receiver_id", messageHandler.GetMessages)
