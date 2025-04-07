@@ -24,3 +24,4 @@ weekly_roadmap/go.sum
 modern-tech/mini_project/go.sum
 
 go.sum
+.env

@@ -36,4 +36,4 @@ start-roadmap:
 	go run weekly_roadmap/cmd/main.go
 
 start-project:
-	go run modern-tech/mini_project/cmd/main.go
+	go run mini_project/cmd/main.go
