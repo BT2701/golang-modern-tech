@@ -8,7 +8,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
-var jwtKey
+var jwtKey []byte
 
 // GenerateToken generates a new JWT token
 func GenerateToken(userID string) (string, error) {
